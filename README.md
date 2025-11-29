@@ -44,3 +44,28 @@ Model architecture:
 ## 🛠️ Installation
 
 ### 1. Clone the Repository
+python -m venv venv
+venv\Scripts\activate 
+pip install -r requirements.txt
+python -m src.train --ticker AAPL --start 2015-01-01 --end 2024-12-31
+models/aapl_lstm.keras
+python -m src.predict
+Outputs:
+
+Actual vs Predicted graph
+
+7-, 15-, 30-day future forecast
+
+Future forecast graph
+streamlit run app.py
+Features:
+
+Enter any stock ticker (AAPL, TSLA, MSFT…)
+
+View historical closing price chart
+
+Predict next 7–60 days
+
+Interactive comparison charts
+
+Forecast table with future prices
